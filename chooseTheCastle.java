@@ -1,6 +1,6 @@
 package chooseYourOwnAdventure;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class chooseTheCastle extends adventureGame{
 public void chooseCastle(int choice1){
@@ -16,6 +16,10 @@ public void chooseCastle(int choice1){
 		System.out.println("He points to an alley, you go down only to find a crowd of people waiting for you...");
 		System.out.println("You're met with more blank stares...");
 		System.out.println("You have an uneasy feeling");
+		//call crowd swtich here
+		crowdSwitchCase crowd = new crowdSwitchCase();
+		crowd.crowdChoice();
+		
 	}else if (choiceCastle == 2){
 		System.out.println("The longer you wait to speak the more visibly angry the guard is becoming");
 		System.out.println("He impales you due to his excessive anger.");

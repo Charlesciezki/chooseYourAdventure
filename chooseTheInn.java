@@ -15,8 +15,12 @@ public class chooseTheInn extends adventureGame{
 			int choiceInn = choiceinn.nextInt();
 			if (choiceInn == 1){
 				System.out.println("You are awoken by a strange crowd of people...");
+				
 			}else{
 				System.out.println("You press on and soon enough you turn a corner and there is a crowd of people waiting for you...");
+				crowdSwitchCase crowd = new crowdSwitchCase();
+				crowd.crowdChoice();
+				//call crowd switch here
 			}
 			
 	}
